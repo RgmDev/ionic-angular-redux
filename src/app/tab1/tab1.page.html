@@ -1,0 +1,82 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tab 1 - Info
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Tab 1 - Info</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>User info</h1>
+        <ion-chip color="danger" *ngIf="!user.token">
+          <ion-label>Disconnected</ion-label>
+        </ion-chip>
+        <ion-list *ngIf="user.token">
+          <ion-item lines="none" color="primary">
+            <ion-label>{{ user.email }}</ion-label>
+          </ion-item>
+          <ion-item lines="none" color="secondary">
+            <ion-label>{{ user.token }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h1>Counter</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-badge color="primary" style="padding: 10px; font-size: 18px;">{{ counter }}</ion-badge>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-row>
+    <ion-col>
+      <h1>Options</h1>
+      <ion-list>
+        <ion-item lines="none" *ngIf="!options.text && 
+          !options.select && 
+          !options.checkbox.jonSnow && 
+          !options.checkbox.daenerysTargaryen && 
+          !options.checkbox.tyrionLannister && 
+          !options.radio && 
+          !options.datetime">
+          <ion-label>No options selected</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.text">
+          <ion-label>{{ options.text }}</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.select">
+          <ion-label>{{ options.select }}</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.checkbox.jonSnow">
+          <ion-label>Jon Snow</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.checkbox.daenerysTargaryen">
+          <ion-label>Daenerys Targaryen</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.checkbox.tyrionLannister">
+          <ion-label>Tyrion Lannister</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.radio">
+          <ion-label>{{ options.radio }}</ion-label>
+        </ion-item>
+        <ion-item *ngIf="options.datetime">
+          <ion-label>{{ options.datetime }}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

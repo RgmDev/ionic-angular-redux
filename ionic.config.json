@@ -1,0 +1,7 @@
+{
+  "name": "ionic-angular-redux",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
