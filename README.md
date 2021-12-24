@@ -179,7 +179,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Rubén González Martín [:mailbox:](rubengm410@gmail.com)
 
-Project Link: [https://github.com/RgmDev/node-basic](https://github.com/RgmDev/ionic-angular-redux)
+Project Link: [https://github.com/RgmDev/ionic-angular-redux](https://github.com/RgmDev/ionic-angular-redux)
 
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
 
