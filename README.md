@@ -70,9 +70,9 @@
 An example about implementing redux in a ionic-angular project. 
 There are 3 simple tabs: 
 
-* Info. Show de redux data store
-* Login. Fake access page that simulate the login
-* Counter & Options. Manage de counter value and form data that show on info page
+* Info - Show de redux data store
+* Login - Fake access page that simulate the login
+* Counter & Options - Manage de counter value and form data that show on info page
 
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
 
@@ -98,8 +98,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-Install [node](https://nodejs.org/es/) 
-Install [ionic-cli](https://ionicframework.com/docs/cli) 
+Install [node](https://nodejs.org/es/) and [ionic-cli](https://ionicframework.com/docs/cli) 
 
 ### Installation
 
@@ -107,37 +106,16 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone git@github.com:RgmDev/node-basic.git
+   git clone git@github.com:RgmDev/ionic-angular-redux.git
+   cd ionic-angular-redux
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-
-
-4. Copy .env.example to .env and configure environment and database conection
+3. Start the server
    ```sh
-   # APP
-   DOMAIN=http://localhost:3000
-
-   # DATABASE
-   DB_HOST=localhost
-   DB_USER=dbuser
-   DB_PASS=password
-   DB_NAME=dbname
-
-   # JWT
-   JWT_KEY=secretkey
-   ```
-
-5. Execute migration and sedder with sequelize-cli
-   ```sh
-   npx sequelize db:migrate
-   npx sequelize db:seed:all
-   ```
-6. Run the project
-   ```sh
-   npm start
+   ionic serve
    ```
 
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
@@ -151,32 +129,9 @@ Use this space to show useful examples of how a project can be used. Additional 
 
 _For more examples, please refer to the [Documentation](https://example.com)_
 
-The user included in seeder: email `admin@mail.com` and password `Password123`
+Change form values in counter & options page, the redux store register the new value that is shown on info page.
 
-Include a Postman collection and environment to easily testing
-
-Endpoints List:
-
-- Users 
-
-`GET /api/users`
-
-`GET /api/users/:id`
-
-`POST /api/users`
-
-`PUT /api/users/:id`
-
-`DELETE /api/users/:id`
-
-
-- App 
-
-`POST /api/auth/login`
-
-`POST /api/uploadFile/:type/:group`
-
-`GET /api/uploadFile/:type/:group/:filename`
+In login page, input a fake user and password, it generates a fake token and the user info is shown on info page, you can perform logout and clean de user info.
 
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
 
@@ -185,16 +140,11 @@ Endpoints List:
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Readme
-- [x] Add Licence
-- [x] Add Postman collection and environment
+- [x] Start a ionic tabs project
+- [x] Add redux store
 - [ ] Others in the future
 
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
-
 
 
 <!-- CONTRIBUTING -->
@@ -229,7 +179,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Rubén González Martín [:mailbox:](rubengm410@gmail.com)
 
-Project Link: [https://github.com/RgmDev/node-basic](https://github.com/RgmDev/node-basic)
+Project Link: [https://github.com/RgmDev/node-basic](https://github.com/RgmDev/ionic-angular-redux)
 
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
 
@@ -247,17 +197,16 @@ Project Link: [https://github.com/RgmDev/node-basic](https://github.com/RgmDev/n
 <p align="right"><a href="#top">:arrow_double_up:</a></p>
 
 
-
 <!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/RgmDev/node-basic
-[contributors-url]: https://github.com/RgmDev/node-basic/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/RgmDev/node-basic
-[forks-url]: https://github.com/RgmDev/node-basic/network/members
-[stars-shield]: https://img.shields.io/github/stars/RgmDev/node-basic
-[stars-url]: https://github.com/RgmDev/node-basic/stargazers
-[issues-shield]: https://img.shields.io/github/issues/RgmDev/node-basic
-[issues-url]: https://github.com/RgmDev/node-basic/issues
-[license-shield]: https://img.shields.io/github/license/RgmDev/node-basic
-[license-url]: https://github.com/RgmDev/node-basic/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/RgmDev/ionic-angular-redux
+[contributors-url]: https://github.com/RgmDev/ionic-angular-redux/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/RgmDev/ionic-angular-redux
+[forks-url]: https://github.com/RgmDev/ionic-angular-redux/network/members
+[stars-shield]: https://img.shields.io/github/stars/RgmDev/ionic-angular-redux
+[stars-url]: https://github.com/RgmDev/ionic-angular-redux/stargazers
+[issues-shield]: https://img.shields.io/github/issues/RgmDev/ionic-angular-redux
+[issues-url]: https://github.com/RgmDev/ionic-angular-redux/issues
+[license-shield]: https://img.shields.io/github/license/RgmDev/ionic-angular-redux
+[license-url]: https://github.com/RgmDev/ionic-angular-redux/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?logo=linkedin&colorB=0e76a8
 [linkedin-url]: https://www.linkedin.com/in/ruben-gonzalez-martin/
